@@ -1,0 +1,9 @@
+<template>
+  <div>WhySecure</div>
+</template>
+
+<script>
+export default {
+  name: 'HomeWhySecure'
+}
+</script>
