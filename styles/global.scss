@@ -1,4 +1,57 @@
+@import '_fonts';
+
+:root {
+	--darkblue: #023257;
+	--yellow: #ffe614;
+	--lightgreen: #00bb29;
+	--black: #0f0f0f;
+}
+
+* {
+	font-family: 'SF Pro Text';
+	color: var(--black);
+}
+
 html, body {
 	font-size: 12px;
 	line-height: 140%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, p, span, ul, li {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img, svg{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (min-width: 576px) {
+    width: 570px;
+  }
+  @media(min-width:768px) {
+    width: 760px;
+  }
+  @media(min-width:992px) {
+    width: 990px;
+  }
+  @media(min-width:1200px) {
+    width: 1190px;
+  }
 }

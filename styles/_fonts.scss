@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'SF Pro Text';
+	src: url('/fonts/sf-pro-text/sf-pro-text-light.eot');
+	src: local('SF Pro Text'),
+			 url('/fonts/sf-pro-text/SF-Pro-Text-Light.otf') format('opentype'),
+			 url('/fonts/sf-pro-text/sf-pro-text-light.svg') format('svg'),
+			 url('/fonts/sf-pro-text/sf-pro-text-light.ttf') format('truetype'),
+			 url('/fonts/sf-pro-text/sf-pro-text-light.woff') format('woff');
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'SF Pro Text';
+	src: url('/fonts/sf-pro-text/sf-pro-text-regular.eot');
+	src: local('SF Pro Text'),
+			 url('/fonts/sf-pro-text/SF-Pro-Text-Regular.otf') format('opentype'),
+			 url('/fonts/sf-pro-text/sf-pro-text-regular.svg') format('svg'),
+			 url('/fonts/sf-pro-text/sf-pro-text-regular.ttf') format('truetype'),
+			 url('/fonts/sf-pro-text/sf-pro-text-regular.woff') format('woff');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'SF Pro Text';
+	src: url('/fonts/sf-pro-text/sf-pro-text-semibold.eot');
+	src: local('SF Pro Text'),
+			 url('/fonts/sf-pro-text/SF-Pro-Text-Semibold.otf') format('opentype'),
+			 url('/fonts/sf-pro-text/sf-pro-text-semibold.svg') format('svg'),
+			 url('/fonts/sf-pro-text/sf-pro-text-semibold.ttf') format('truetype'),
+			 url('/fonts/sf-pro-text/sf-pro-text-semibold.woff') format('woff');
+	font-weight: 600;
+}

@@ -1,6 +1,5 @@
 <template>
 	<div class="index-page">
-		
   	<HomeHeader/>
 		<HomeInstantly/>
 		<HomeInstant/>
@@ -11,7 +10,6 @@
 		<HomeInstantlySecure/>
 		<HomeFaq/>
 		<HomeFooter/>
-
 	</div>
 </template>
 
