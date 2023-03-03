@@ -39,7 +39,7 @@
 						Exclusive Offer - Not Available On Amazon 
 						<img src="/img/icon-gift.png">
 					</p>
-					<nuxt-link class="btn" to="checkOut">Unlock Offer & Save 50%</nuxt-link>
+					<nuxt-link class="btn" to="checkout">Unlock Offer & Save 50%</nuxt-link>
 					<div class="btn-text">
 						<span>Hurry!</span>Only<span>172 Left</span>At This Price!
 					</div>

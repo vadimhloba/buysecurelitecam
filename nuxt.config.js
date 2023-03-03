@@ -16,7 +16,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
+  styleResources: {
+    scss: ['~/assets/scss/_functions.scss']
+  },
   css: ["~/styles/global.scss"],
 
   plugins: [

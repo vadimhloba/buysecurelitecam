@@ -18,7 +18,7 @@
 					<li><nuxt-link to="#">Reviews</nuxt-link></li>
 					<li><nuxt-link to="#">FAQ</nuxt-link></li>
 				</ul>
-				<nuxt-link class="btn" to="checkOut">Unlock Offer</nuxt-link>
+				<nuxt-link class="btn" to="checkout">Unlock Offer</nuxt-link>
 			</div>
 		</div>
 	</header>
