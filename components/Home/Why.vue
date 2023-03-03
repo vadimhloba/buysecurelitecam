@@ -1,9 +1,9 @@
 <template>
-  <div>ImgSlider</div>
+  <div>WhySecure</div>
 </template>
 
 <script>
 export default {
-  name: 'HomeImgSlider'
+  name: 'HomeWhy'
 }
 </script>

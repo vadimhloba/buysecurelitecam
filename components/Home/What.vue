@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'HomeSeeWhat'
+  name: 'HomeWhat'
 }
 </script>

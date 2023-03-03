@@ -1,9 +1,9 @@
 <template>
-  <div>WhySecure</div>
+  <div>TextSlide</div>
 </template>
 
 <script>
 export default {
-  name: 'HomeWhySecure'
+  name: 'HomeSlide'
 }
 </script>

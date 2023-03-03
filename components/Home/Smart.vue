@@ -1,9 +1,9 @@
 <template>
-  <div>InstantlySecure</div>
+  <div>SmartSecurity</div>
 </template>
 
 <script>
 export default {
-  name: 'HomeInstantlySecure'
+  name: 'HomeSmart'
 }
 </script>

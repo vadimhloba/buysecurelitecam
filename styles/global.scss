@@ -1,11 +1,16 @@
 @import '_fonts';
 @import '_functions';
+@import '_animations';
 
 :root {
+	--bluish: #e5f7ff;
+	--blue: #0692db;
 	--darkblue: #023257;
 	--yellow: #ffe614;
 	--lightgreen: #00bb29;
 	--black: #0f0f0f;
+	--grayish: #ededed;
+	--red: #ff0000;
 }
 
 * {
@@ -38,6 +43,7 @@ img, svg{
 }
 
 .container {
+	position: relative;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -57,54 +63,54 @@ img, svg{
   }
 }
 
-.title{
-  & > div{
-    line-height: 1.3;
-  }
-  &__clamp{
-    font-size: clamp(20px, cqi(40), 40px);
-    margin-bottom: clamp(15px, cqi(60), 60px);
-  }
-  &__old{
-    font-size: 20px;
-    margin-bottom: 15px;
-    @media(min-width:768px){
-      font-size: 25px;
-      margin-bottom: 20px;
-    }
-    @media(min-width:992px){
-      font-size: 35px;
-      margin-bottom: 30px;
-    }
-    @media(min-width:1200px){
-      font-size: 40px;
-      margin-bottom: 60px;
-    }
-  }
-}
+// .title{
+//   & > div{
+//     line-height: 1.3;
+//   }
+//   &__clamp{
+//     font-size: clamp(20px, cqi(40), 40px);
+//     margin-bottom: clamp(15px, cqi(60), 60px);
+//   }
+//   &__old{
+//     font-size: 20px;
+//     margin-bottom: 15px;
+//     @media(min-width:768px){
+//       font-size: 25px;
+//       margin-bottom: 20px;
+//     }
+//     @media(min-width:992px){
+//       font-size: 35px;
+//       margin-bottom: 30px;
+//     }
+//     @media(min-width:1200px){
+//       font-size: 40px;
+//       margin-bottom: 60px;
+//     }
+//   }
+// }
 
-.box{
-  width: 50%;
-  border: 2px solid red;
-  background: #ccc;
-  height: 100px;
-  margin-bottom: clamp(15px, cqi(60), 60px);
-  &__wrap{
-    display: flex;
-  }
-  &__title{
-    font-size: clamp(15px, cqi(30), 30px);
-  }
-  &__old{
-    font-size: 15px;
-    @media(min-width:768px){
-      font-size: 20px;
-    }
-    @media(min-width:992px){
-      font-size: 25px;
-    }
-    @media(min-width:1200px){
-      font-size: 30px;
-    }
-  }
-}
+// .box{
+//   width: 50%;
+//   border: 2px solid red;
+//   background: #ccc;
+//   height: 100px;
+//   margin-bottom: clamp(15px, cqi(60), 60px);
+//   &__wrap{
+//     display: flex;
+//   }
+//   &__title{
+//     font-size: clamp(15px, cqi(30), 30px);
+//   }
+//   &__old{
+//     font-size: 15px;
+//     @media(min-width:768px){
+//       font-size: 20px;
+//     }
+//     @media(min-width:992px){
+//       font-size: 25px;
+//     }
+//     @media(min-width:1200px){
+//       font-size: 30px;
+//     }
+//   }
+// }

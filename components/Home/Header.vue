@@ -11,14 +11,16 @@
 				<div class="logo">
 					<img src="/img/logo.png">
 				</div>
-				<ul>
-					<li><nuxt-link to="#">Overview</nuxt-link></li>
-					<li><nuxt-link to="#">Features</nuxt-link></li>
-					<li><nuxt-link to="#">Where To Use</nuxt-link></li>
-					<li><nuxt-link to="#">Reviews</nuxt-link></li>
-					<li><nuxt-link to="#">FAQ</nuxt-link></li>
-				</ul>
-				<nuxt-link class="btn" to="checkout">Unlock Offer</nuxt-link>
+				<div class="box-links">
+					<ul>
+						<li><nuxt-link to="#">Overview</nuxt-link></li>
+						<li><nuxt-link to="#">Features</nuxt-link></li>
+						<li><nuxt-link to="#">Where To Use</nuxt-link></li>
+						<li><nuxt-link to="#">Reviews</nuxt-link></li>
+						<li><nuxt-link to="#">FAQ</nuxt-link></li>
+					</ul>
+					<nuxt-link class="btn" to="checkout">Unlock Offer</nuxt-link>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -55,6 +57,8 @@ export default {
 		}
 	}
 	&__top-fix-bar {
+		position: relative;
+		width: 100%;
 		padding: 5px 0;
 		box-shadow: 0 3px 4px 0 rgb(0 0 0 / 10%);
 		.container {
@@ -63,6 +67,9 @@ export default {
 			align-items: center;
 			.logo {
 				width: 130px;
+			}
+			.box-links {
+				display: flex;
 			}
 			ul {
 				display: flex;
@@ -102,7 +109,7 @@ export default {
     		border-radius: 4px;
     		font-weight: 600;
     		line-height: 50px;
-    		margin-top: 10px;
+				margin-left: 15px;
 			}
 		}
 	}
