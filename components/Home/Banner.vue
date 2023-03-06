@@ -139,15 +139,6 @@ export default {
 			}
 		}
 		.btn-box {
-			position: relative;
-			width: 470px;
-    	max-width: 100%;
-			margin-top: 35px;
-			display: block;
-			text-align: center;
-			font-size: 17px;
-    	line-height: 20px;
-			font-weight: 600;
 			.btn-desc {
 				display: flex;
 				align-items: flex-end;
@@ -156,25 +147,6 @@ export default {
 				padding-bottom: 8px;
 				img {
 					margin: 0 8px;
-				}
-			}
-			.btn-text {
-				margin: 9px 0 18px;
-				span {
-					color: var(--red);
-				}
-			}
-			.slider {
-				position: relative;
-				height: 6px;
-				background: var(--grayish);
-				border-radius: 6px;
-				overflow: hidden;
-				.tab-move {
-					height: 6px;
-					width: 50%;
-					background: var(--red);
-					border-radius: 6px;
 				}
 			}
 		}

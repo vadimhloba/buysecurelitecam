@@ -20,6 +20,7 @@
 		<HomeWhy/>
 		<HomeSmart/>
 		<HomeSecure/>
+		<HomeWhat/>
 		<HomeFaq/>
 		<HomeFooter/>
 	</div>

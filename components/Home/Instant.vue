@@ -2,9 +2,9 @@
   <div class="home-instant">
 		<div class="container">
 			<img class="arw-down" src="/img/arw-down.png">
-			<p class="title">Instant & Discreet Security</p>
-			<p class="title-desc">For Your Home From Anywhere</p>
-			<p class="desc">It has never been easier to set up a surveillance system. <br> Professional Home Surveillance System For A Fraction Of The Price.</p>
+			<h1 class="title-up">Instant & Discreet Security</h1>
+			<h1 class="title-down">For Your Home From Anywhere</h1>
+			<p class="title-desc">It has never been easier to set up a surveillance system. <br> Professional Home Surveillance System For A Fraction Of The Price.</p>
 			<div class="video">
 				<img v-if="showVideo" class="img-post" src="/img/index-poster.png" @click="playVideo">
 				<video controls ref="videoPlayer" width="100%">
@@ -47,24 +47,6 @@ export default {
 		display: block;
 		margin: 0 auto;
 	}
-	.title {
-		font-size: 40px;
-    line-height: 49px;
-	}
-	.title-desc {
-		font-size: 40px;
-    line-height: 49px;
-    font-weight: 700;
-		color: var(--blue);
-		padding-bottom: 50px;
-		background: url(/img/pre-line.png) no-repeat center bottom;
-	}
-	.desc {
-		font-size: 19px;
-    line-height: 28px;
-    letter-spacing: 0.5px;
-		margin-top: 20px;
-	}
 	.video {
 		position: relative;
 		background: #000000;
@@ -96,32 +78,7 @@ export default {
     letter-spacing: 0.5px;
 	}
 	.btn-box {
-		display: block;
-		max-width: 470px;
-		width: 100%;
 		margin: 35px auto 0;
-		font-size: 17px;
-    line-height: 20px;
-		font-weight: 600;
-		.btn-text {
-			margin: 9px 0 18px;
-			span {
-				color: var(--red);
-			}
-		}
-		.slider {
-			position: relative;
-			height: 6px;
-			background: var(--grayish);
-			border-radius: 6px;
-			overflow: hidden;
-			.tab-move {
-				height: 6px;
-				width: 50%;
-				background: var(--red);
-				border-radius: 6px;
-			}
-		}
 	}
 }
 </style>
