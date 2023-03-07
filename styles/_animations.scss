@@ -11,8 +11,23 @@
 	}
 }
 
+@keyframes appear {
+	0% {
+    transform: scaleY(0);
+    transform-origin: center top;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: center top;
+  }
+}
+
 /* styling an animation */
 .pulse {
 	animation: pulse 1.5s infinite;
 	-webkit-animation: pulse 1.5s infinite;
+}
+.appear {
+	animation: appear 1s both;
+	-webkit-animation: appear 1s both;
 }
