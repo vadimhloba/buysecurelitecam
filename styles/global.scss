@@ -8,11 +8,17 @@
 	--bluish: #e5f7ff;
 	--blue: #0692db;
 	--darkblue: #023257;
+	--darkblue-v2: #17214c;
 	--yellow: #ffe614;
 	--lightgreen: #00bb29;
 	--black: #0f0f0f;
 	--grayish: #ededed;
+	--lightgray: #d7d7d7;
 	--red: #ff0000;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 html, body {
@@ -26,6 +32,7 @@ body {
 	font-family: 'SF Pro Text';
 	font-weight: normal;
 	color: var(--black);
+	font-size: 15px;
 }
 
 h1, h2, h3, h4, h5, p, span, ul, li {
