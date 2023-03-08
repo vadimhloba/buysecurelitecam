@@ -7,7 +7,7 @@
   		<div class="faq-slider">
   		  <div v-for="slide in slides" :key="slide.text" class="slide" @click="clickEl">
   		    <div class="text">{{ slide.text }}</div>
-  		    <div class="tab-content appear">
+  		    <div class="tab-content">
   		      <p v-if="slide.content">{{ slide.content }}</p>
   		      <video v-if="slide.video" controls width="100%">
   		        <source :src="slide.video" type="video/mp4">
@@ -76,12 +76,15 @@ export default {
       ]
     }
   },
+	mounted() {
+	  this.$el.querySelector('.slide').classList.add('tab-open');
+	},
 	methods: {
-		clickEl(e) {
-			const slide = e.target.closest('.slide');
-    	slide.querySelector('.text')?.classList.toggle('active');
-    	slide.querySelector('.tab-content')?.classList.toggle('active');
-  	}
+		clickEl(index) {
+		  const slide = this.$el.querySelectorAll('.slide')[index];
+		  slide.classList.toggle('tab-open');
+		  slide.classList.toggle('tab-close');
+		},
 	}
 }
 </script>
@@ -110,22 +113,29 @@ export default {
     		cursor: pointer;
     		border-bottom: 1px solid #d8d9d9;
 				background: url(/img/open-btn.png) no-repeat 97% center;
-				&.active {
+				&.tab-open {
 					background: url(/img/close-btn.png) no-repeat 97% center;
 				}
 			}
 			.tab-content {
 				padding: 20px 30px 0 0;
-				display: none;
-				&.active {
-					display: block;
-				}
 				p {
 					font-size: 18px;
     			line-height: 28px;
     			letter-spacing: 0.5px;
 					margin-bottom: 15px;
 				}
+			}
+			&.tab-open > .tab-content {
+				display: block;
+				height: 100%;
+				overflow: hidden;
+				padding-top: 20px;
+			}
+			&.tab-close > .tab-content {
+				display: none;
+				height: 0;
+				padding-top: 0;
 			}
 		}
 	}

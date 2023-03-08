@@ -2,7 +2,7 @@ export default {
   target: 'static',
 
   head: {
-    title: 'buysecurelitecam',
+    title: 'Secure Lite Cam',
     htmlAttrs: {
       lang: 'en'
     },
