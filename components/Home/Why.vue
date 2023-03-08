@@ -74,9 +74,7 @@
 				<div class="btn-text">
 					<span>Hurry!</span> Only <span>172 Left</span> At This Price!
 				</div>
-				<div class="slider">
-					<div class="tab-move"></div>
-				</div>
+				<SliderOffer/>
 			</div>
 		</div>
 	</div>

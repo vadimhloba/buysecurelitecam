@@ -109,19 +109,6 @@ img, svg{
 			color: var(--red);
 		}
 	}
-	.slider {
-		position: relative;
-		height: 6px;
-		background: var(--grayish);
-		border-radius: 6px;
-		overflow: hidden;
-		.tab-move {
-			height: 6px;
-			width: 50%;
-			background: var(--red);
-			border-radius: 6px;
-		}
-	}
 }
 
 // .title{

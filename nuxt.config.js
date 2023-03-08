@@ -22,7 +22,7 @@ export default {
   css: ["~/styles/global.scss"],
 
   plugins: [
-  ],
+	],
 
   components: true,
 
