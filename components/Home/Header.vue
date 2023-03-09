@@ -40,13 +40,18 @@ export default {
 		padding: 7px 0;
 		background: var(--darkblue);
 		p {
-			max-width: 450px;
+			text-align: center;
 			color: #ffffff;
-    	font-size: 16px;
-    	line-height: 20px;
+    	font-size: 12px;
+			line-height: 18px;
+			letter-spacing: .5px;
     	font-weight: 500;
-			letter-spacing: 1px;
 			margin: 0 auto;
+			@media (min-width: 768px) {
+				font-size: 16px;
+    		line-height: 20px;
+				letter-spacing: 1px;
+			}
 			span {
 				color: var(--yellow);
 				font-weight: bold;
@@ -66,15 +71,21 @@ export default {
 			justify-content: space-between;
 			align-items: center;
 			.logo {
-				width: 130px;
+				width: 95px;
+				@media (min-width: 768px) {
+					width: 130px;
+				}
 			}
 			.box-links {
 				display: flex;
 			}
 			ul {
-				display: flex;
+				display: none;
 				list-style: none;
 				align-items: center;
+				@media (min-width: 1200px) {
+					display: flex;
+				}
 				li {
 					padding: 0 26px;
     			position: relative;
@@ -101,15 +112,21 @@ export default {
 				display: flex;
 				justify-content: center;
 				background: var(--lightgreen);
-				width: 200px;
-    		font-size: 20px;
+				width: 125px;
+    		height: 36px;
+    		line-height: 36px;
+    		font-size: 15px;
     		letter-spacing: 0.5px;
     		color: #ffffff;
-    		height: 50px;
     		border-radius: 4px;
     		font-weight: 600;
-    		line-height: 50px;
-				margin-left: 15px;
+				@media (min-width: 768px) {
+					width: 200px;
+					height: 50px;
+					line-height: 50px;
+					margin-left: 15px;
+					font-size: 20px;
+				}
 			}
 		}
 	}

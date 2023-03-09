@@ -9,7 +9,7 @@ export default {
 	name: 'SliderOffer',
 	data() {
     return {
-      values: [100, 95, 60, 20],
+      values: [100, 60, 20],
 			currentValueIndex: 0,
     };
   },
