@@ -1,5 +1,5 @@
 <template>
-  <div class="home-smart">
+  <div class="home-smart" id="smart">
 		<div class="container">
 			<img src="/img/arw-down.png" class="arw-down">
 			<div class="wrapper">

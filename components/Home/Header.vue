@@ -6,20 +6,22 @@
 				<p>Your 50% Discount Code Has Been Applied<span>VIP50</span></p>
 			</div>
 		</div>
-		<div class="header__top-fix-bar">
-			<div class="container">
-				<div class="logo">
-					<img src="/img/logo.png">
-				</div>
-				<div class="box-links">
-					<ul>
-						<li><nuxt-link to="#">Overview</nuxt-link></li>
-						<li><nuxt-link to="#">Features</nuxt-link></li>
-						<li><nuxt-link to="#">Where To Use</nuxt-link></li>
-						<li><nuxt-link to="#">Reviews</nuxt-link></li>
-						<li><nuxt-link to="#">FAQ</nuxt-link></li>
-					</ul>
-					<nuxt-link class="btn" to="checkout">Unlock Offer</nuxt-link>
+		<div class="header__top-fix-bar" :class="{'bar-fixed': isFixed}">
+			<div class="wrapper">
+				<div class="container">
+					<div class="logo">
+						<img src="/img/logo.png">
+					</div>
+					<div class="box-links">
+						<ul>
+							<li><nuxt-link to="#banner">Overview</nuxt-link></li>
+							<li><nuxt-link to="#why">Features</nuxt-link></li>
+							<li><nuxt-link to="#smart">Where To Use</nuxt-link></li>
+							<li><nuxt-link to="#what">Reviews</nuxt-link></li>
+							<li><nuxt-link to="#faq">FAQ</nuxt-link></li>
+						</ul>
+						<nuxt-link class="btn" to="checkout">Unlock Offer</nuxt-link>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -29,7 +31,19 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+	data:()=>({ isFixed:false }),
+  mounted(){
+		window.addEventListener('scroll', this.handleScroll);
+	},
+  beforeDestroy(){
+		window.removeEventListener('scroll', this.handleScroll);
+	},
+  methods:{
+	  handleScroll(){
+	    this.isFixed = window.pageYOffset > 0
+	  }
+	}
 }
 </script>
 
@@ -62,10 +76,38 @@ export default {
 		}
 	}
 	&__top-fix-bar {
-		position: relative;
 		width: 100%;
-		padding: 5px 0;
-		box-shadow: 0 3px 4px 0 rgb(0 0 0 / 10%);
+		@media (min-width: 768px) {
+			margin-bottom: 70px;
+		}
+		&.bar-fixed {
+			@media (min-width: 768px) {
+				.wrapper {
+					position: fixed;
+    			z-index: 11;
+    			top: 0;
+    			background: #fff;
+    			-webkit-transition: margin .3s ease-out;
+    			transition: margin .3s ease-out;
+    			margin-top: 0;
+    			-webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,0.1);
+    			box-shadow: 0 3px 4px 0 rgba(0,0,0,0.1);
+				}
+			}
+		}
+		.wrapper {
+			padding: 10px 0;
+			width: 100%;
+			position: relative;
+			-webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,0.1);
+    	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.1);
+			@media (min-width: 768px) {
+				padding: 0;
+    		height: 70px;
+    		margin-top: -70px;
+    		top: 70px;
+			}
+		}
 		.container {
 			display: flex;
 			justify-content: space-between;
@@ -74,6 +116,7 @@ export default {
 				width: 95px;
 				@media (min-width: 768px) {
 					width: 130px;
+					margin-top: 5px;
 				}
 			}
 			.box-links {
@@ -83,6 +126,7 @@ export default {
 				display: none;
 				list-style: none;
 				align-items: center;
+				margin-top: 10px;
 				@media (min-width: 1200px) {
 					display: flex;
 				}
@@ -93,6 +137,10 @@ export default {
 						font-size: 18px;
     				line-height: 19px;
     				font-weight: 300;
+						color: #0f0f0f;
+						&:hover {
+							color: #00c04e;
+						}
 					}
 					&:last-child:after {
 						width: 0;
@@ -126,6 +174,7 @@ export default {
 					line-height: 50px;
 					margin-left: 15px;
 					font-size: 20px;
+					margin-top: 10px;
 				}
 			}
 		}

@@ -1,6 +1,6 @@
 <template>
   <div class="home-slide">
-		<ul>
+		<ul class="marque">
 			<li>Limited Time Discount</li>
 			<li>Exclusive Website Offer</li>
 			<li>Fast Shipping & Delivery</li>
@@ -36,21 +36,23 @@ export default {
 	position: relative;
 	width: 100%;
 	height: 51px;
-	overflow-y: auto;
+	overflow: hidden;
 	background: var(--darkblue);
 	margin-top: 10px;
 	ul {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
 		text-align: left;
-		padding: 0;
-		margin: 0;
-		max-width: 100%;
-		width: 5076px;
 		display: flex;
-		align-items: center;
-		list-style: none;
+		&:hover {
+			animation-play-state: paused;
+		}
 		li {
 			position: relative;
-			padding: 12px 40px 0;
+			padding: 12px 40px;
 			font-size: 18px;
 			font-weight: 400;
 			color: var(--white);
@@ -60,7 +62,7 @@ export default {
 				width: 1px;
 				background: var(--white);
 				top: 15px;
-				bottom: 4px;
+				bottom: 15px;
 				position: absolute;
 				right: 0;
 			}

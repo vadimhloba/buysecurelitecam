@@ -10,9 +10,21 @@
 		transform: scale(0.9);
 	}
 }
+@keyframes marque {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
 
 /* styling an animation */
 .pulse {
 	animation: pulse 1.5s infinite;
 	-webkit-animation: pulse 1.5s infinite;
+}
+.marque {
+	animation: marque 24s linear infinite;
+	-webkit-animation: marque 24s linear infinite;
 }

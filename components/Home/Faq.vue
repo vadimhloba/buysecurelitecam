@@ -1,5 +1,5 @@
 <template>
-  <div class="home-faq">
+  <div class="home-faq" id="faq">
 		<div class="container">
 			<img src="/img/arw-down.png" class="arw-down">
 			<h1 class="title-up">Frequently Asked Questions</h1>

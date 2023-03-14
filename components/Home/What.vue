@@ -1,5 +1,5 @@
 <template>
-  <div class="home-what">
+  <div class="home-what" id="what">
 		<div class="container">
 			<img src="/img/arw-down.png" class="arw-down">
 			<h1 class="title-up">See What our customers think about</h1>

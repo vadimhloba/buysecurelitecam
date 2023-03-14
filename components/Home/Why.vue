@@ -1,5 +1,5 @@
 <template>
-  <div class="home-why">
+  <div class="home-why" id="why">
 		<div class="container">
 			<img src="/img/arw-down.png" class="arw-down">
 			<h1 class="title-up">Why Secure Lite Cam?</h1>
