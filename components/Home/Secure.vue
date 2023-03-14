@@ -97,10 +97,6 @@ export default {
 .home-secure {
 	padding: 40px 0 60px;
 	text-align: center;
-	.arw-down {
-		display: block;
-		margin: 0 auto 15px;
-	}
 	.block {
 		position: relative;
 		display: flex;

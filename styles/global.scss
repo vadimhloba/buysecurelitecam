@@ -50,6 +50,7 @@ img, svg{
   height: auto;
 }
 
+
 .container {
 	position: relative;
   max-width: 100%;
@@ -60,35 +61,88 @@ img, svg{
   @media (min-width: 576px) {
     width: 570px;
   }
-  @media(min-width:768px) {
+  @media(min-width: 768px) {
     width: 760px;
   }
-  @media(min-width:992px) {
+  @media(min-width: 992px) {
     width: 990px;
   }
-  @media(min-width:1200px) {
+  @media(min-width: 1200px) {
     width: 1190px;
   }
 }
 
+/* styling br */
+.for-mob {
+	display: block;
+	@media(min-width: 768px) {
+    display: none;
+  }
+}
+
+.hide-mob {
+	display: none;
+	@media(min-width: 768px) {
+    display: block;
+  }
+}
+
 /* styling Title */
+.arw-down {
+	display: block;
+	margin: 0 auto 10px;
+	max-height: 45px;
+	@media(min-width: 768px) {
+    margin: 0 auto 15px;
+		max-height: 100%;
+  }
+}
 .title-up {
-	font-size: 40px;
-	line-height: 49px;
+	font-size: 25px;
+  line-height: 30px;
+	@media(min-width: 768px) {
+    font-size: 30px;
+    line-height: 42px;
+  }
+	@media(min-width: 992px) {
+    font-size: 34px;
+    line-height: 46px;
+  }
+	@media(min-width: 1200px) {
+		font-size: 40px;
+		line-height: 49px;
+  }
 }
 .title-down {
-	font-size: 40px;
-	line-height: 49px;
+	font-size: 27px;
+  line-height: 32px;
 	font-weight: 700;
 	color: var(--blue);
 	padding-bottom: 50px;
 	background: url(/img/pre-line.png) no-repeat center bottom;
+	@media(min-width: 768px) {
+    font-size: 30px;
+    line-height: 42px;
+  }
+	@media(min-width: 992px) {
+    font-size: 34px;
+    line-height: 46px;
+  }
+	@media(min-width: 1200px) {
+		font-size: 40px;
+		line-height: 49px;
+  }
 }
 .title-desc {
-	font-size: 19px;
-	line-height: 28px;
+	font-size: 17px;
+	line-height: 25px;
+	margin-top: 15px;
 	letter-spacing: 0.5px;
-	margin-top: 20px;
+	@media(min-width: 768px) {
+    font-size: 19px;
+		line-height: 28px;
+		margin-top: 20px;
+  }
 }
 
 /* styling Box for button */
@@ -102,7 +156,10 @@ img, svg{
 	font-size: 17px;
 	line-height: 20px;
 	font-weight: 600;
-
+	display: none;
+	@media(min-width: 768px) {
+		display: block;
+	}
 	.btn-text {
 		margin: 9px 0 18px;
 		span {
@@ -110,55 +167,3 @@ img, svg{
 		}
 	}
 }
-
-// .title{
-//   & > div{
-//     line-height: 1.3;
-//   }
-//   &__clamp{
-//     font-size: clamp(20px, cqi(40), 40px);
-//     margin-bottom: clamp(15px, cqi(60), 60px);
-//   }
-//   &__old{
-//     font-size: 20px;
-//     margin-bottom: 15px;
-//     @media(min-width:768px){
-//       font-size: 25px;
-//       margin-bottom: 20px;
-//     }
-//     @media(min-width:992px){
-//       font-size: 35px;
-//       margin-bottom: 30px;
-//     }
-//     @media(min-width:1200px){
-//       font-size: 40px;
-//       margin-bottom: 60px;
-//     }
-//   }
-// }
-
-// .box{
-//   width: 50%;
-//   border: 2px solid red;
-//   background: #ccc;
-//   height: 100px;
-//   margin-bottom: clamp(15px, cqi(60), 60px);
-//   &__wrap{
-//     display: flex;
-//   }
-//   &__title{
-//     font-size: clamp(15px, cqi(30), 30px);
-//   }
-//   &__old{
-//     font-size: 15px;
-//     @media(min-width:768px){
-//       font-size: 20px;
-//     }
-//     @media(min-width:992px){
-//       font-size: 25px;
-//     }
-//     @media(min-width:1200px){
-//       font-size: 30px;
-//     }
-//   }
-// }

@@ -54,10 +54,6 @@ export default {
 .home-smart {
 	padding: 40px 0 60px;
 	background: var(--bluelight);
-	.arw-down {
-		display: block;
-		margin: 0 auto 15px;
-	}
 	.wrapper {
 		display: flex;
 		justify-content: space-between;

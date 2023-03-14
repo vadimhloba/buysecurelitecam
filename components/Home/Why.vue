@@ -92,10 +92,6 @@ export default {
 	padding: 40px 0 60px;
 	width: 100%;
 	text-align: center;
-	.arw-down {
-		display: block;
-		margin: 0 auto 15px;
-	}
 	.pr-features {
 		position: relative;
 		width: 100%;

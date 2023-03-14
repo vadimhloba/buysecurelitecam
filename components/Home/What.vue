@@ -178,10 +178,6 @@ export default {
 	position: relative;
 	padding: 20px 0 60px;
 	text-align: center;
-	.arw-down {
-		display: block;
-		margin: 0 auto 15px;
-	}
 	.features {
 		margin: 40px auto 0;
 		display: flex;

@@ -92,10 +92,6 @@ export default {
 	padding: 40px 0 60px;
 	text-align: center;
 	background: var(--bluelight);
-	.arw-down {
-		display: block;
-		margin: 0 auto 15px;
-	}
 	.faq-slider {
 		max-width: 1030px;
 		margin: 40px auto 0;

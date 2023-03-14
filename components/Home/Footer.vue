@@ -4,13 +4,21 @@
 			<img src="/img/logo.png">
 			<ul>
 				<li>Reference</li>
+				<li>|</li>
 				<li>Owner's Manual</li>
+				<li>|</li>
 				<li>FAQs</li>
+				<li>|</li>
 				<li>Contact Us</li>
+				<li>|</li>
 				<li>Terms & Conditions</li>
+				<li>|</li>
 				<li>Privacy Policy</li>
+				<li>|</li>
 				<li>Returns</li>
+				<li>|</li>
 				<li>Shipping</li>
+				<li>|</li>
 				<li>Waranty</li>
 			</ul>
 			<p>© 2023 Secure Lite Cam, All rights reserved.</p>
@@ -28,37 +36,19 @@ export default {
 .home-footer {
 	padding: 50px 0;
 	text-align: center;
+	color: #333333;
 	img {
 		margin: 0 auto 15px;
 	}
 	ul {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		list-style: none;
+		width: 100%;
 		li {
-			display: flex;
-			align-items: center;
-			position: relative;
-			padding-right: 7px;
-			margin-right: 7px;
-			&::after {
-				content: '';
-				width: 1px;
-				position: absolute;
-				right: 0;
-				height: 15px;
-				background: #3d3d3d;
-			}
-			&:last-child::after {
-				width: 0;
-			}
+			display: inline-block;
 		}
 	}
 	p {
 		font-size: 16px;
     line-height: 26px;
-    color: #333333;
     margin-top: 7px;
 	}
 }

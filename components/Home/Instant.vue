@@ -4,14 +4,14 @@
 			<img class="arw-down" src="/img/arw-down.png">
 			<h1 class="title-up">Instant & Discreet Security</h1>
 			<h1 class="title-down">For Your Home From Anywhere</h1>
-			<p class="title-desc">It has never been easier to set up a surveillance system. <br> Professional Home Surveillance System For A Fraction Of The Price.</p>
+			<p class="title-desc">It has never been easier to set up a surveillance system. <br class="hide-mob"> Professional Home Surveillance System For A Fraction Of The Price.</p>
 			<div class="video">
 				<img v-if="showVideo" class="img-post" src="/img/index-poster.png" @click="playVideo">
 				<video controls ref="videoPlayer" width="100%">
 					<source src="https://video.buysecurelitecam.com/Interstitial-video.mp4" type="video/mp4">
 				</video>
 			</div>
-			<p class="post-desc">Secure Lite Cam is compact and has all the features anyone would want when <br> having cameras inside & outside their home.</p>
+			<p class="post-desc">Secure Lite Cam is compact and has all the features anyone would want when <br class="hide-mob"> having cameras inside & outside their home.</p>
 			<div class="btn-box">
 				<BtnOffer buttonText="Unlock Offer & Save 50%" class="btn"/>
 				<div class="btn-text">
@@ -39,17 +39,16 @@ export default {
 <style lang="scss" scoped>
 .home-instant {
 	width: 100%;
-	padding: 30px 0 70px;
+	padding: 25px 0 30px;
 	text-align: center;
-	.arw-down {
-		display: block;
-		margin: 0 auto;
+	@media(min-width: 768px) {
+		padding: 30px 0 70px;
 	}
 	.video {
 		position: relative;
 		background: #000000;
     display: flex;
-    margin: 50px auto 0;
+		margin: 25px auto 0;
     max-width: 660px;
     overflow: hidden;
     cursor: pointer;
@@ -57,6 +56,9 @@ export default {
     border: 4px solid #fff;
     box-shadow: 0 2px 9px 0 rgb(0 0 0 / 10%);
     -webkit-box-shadow: 0 2px 9px 0 rgb(0 0 0 / 10%);
+		@media(min-width: 768px) {
+			margin: 50px auto 0;
+		}
 		.img-post {
 			position: absolute;
 			z-index: 2;
@@ -69,11 +71,15 @@ export default {
 		}
 	}
 	.post-desc {
-		margin-top: 50px;
-    font-weight: 600;
-		font-size: 19px;
     line-height: 28px;
     letter-spacing: 0.5px;
+		margin-top: 25px;
+    font-weight: 600;
+    font-size: 18px;
+		@media(min-width: 768px) {
+			margin-top: 50px;
+			font-size: 19px;
+		}
 	}
 	.btn-box {
 		margin: 35px auto 0;
