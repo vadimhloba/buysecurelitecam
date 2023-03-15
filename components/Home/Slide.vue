@@ -35,10 +35,13 @@ export default {
 .home-slide {
 	position: relative;
 	width: 100%;
-	height: 51px;
+	height: 40px;
 	overflow: hidden;
 	background: var(--darkblue);
 	margin-top: 10px;
+	@media (min-width: 768px) {
+		height: 51px;
+	}
 	ul {
 		position: absolute;
 		left: 0;
@@ -52,19 +55,29 @@ export default {
 		}
 		li {
 			position: relative;
-			padding: 12px 40px;
-			font-size: 18px;
 			font-weight: 400;
 			color: var(--white);
 			white-space: nowrap;
+			padding: 7px 30px 0;
+			font-size: 16px;
+			line-height: 26px;
+			@media (min-width: 768px) {
+				padding: 12px 40px 0;
+				font-size: 18px;
+				line-height: 30px;
+			}
 			&:after {
 				content: '';
 				width: 1px;
 				background: var(--white);
-				top: 15px;
-				bottom: 15px;
+				top: 8px;
+				bottom: 8px;
 				position: absolute;
 				right: 0;
+				@media (min-width: 768px) {
+					top: 14px;
+					bottom: 14px;
+				}
 			}
 		}
 	}

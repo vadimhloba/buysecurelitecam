@@ -25,6 +25,14 @@
 	-webkit-animation: pulse 1.5s infinite;
 }
 .marque {
-	animation: marque 24s linear infinite;
-	-webkit-animation: marque 24s linear infinite;
+	animation: marque 6s linear infinite;
+	-webkit-animation: marque 6s linear infinite;
+	@media (min-width: 576px) {
+		animation: marque 14s linear infinite;
+		-webkit-animation: marque 14s linear infinite;
+	}
+	@media (min-width: 992px) {
+		animation: marque 20s linear infinite;
+		-webkit-animation: marque 20s linear infinite;
+	}
 }
