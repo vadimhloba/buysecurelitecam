@@ -89,9 +89,12 @@ export default {
 
 <style lang="scss" scoped>
 .home-faq {
-	padding: 40px 0 60px;
+	padding: 25px 0 30px;
 	text-align: center;
 	background: var(--bluelight);
+	@media (min-width: 768px) {
+		padding: 40px 0 60px;
+	}
 	.faq-slider {
 		max-width: 1030px;
 		margin: 40px auto 0;
@@ -99,25 +102,38 @@ export default {
 		text-align: left;
 		.slide {
 			.text {
-				padding: 25px 40px 25px 0;
-    		font-size: 20px;
-    		line-height: 28px;
 				font-weight: 600;
     		letter-spacing: 0.5px;
     		cursor: pointer;
     		border-bottom: 1px solid #d8d9d9;
 				background: url(/img/open-btn.png) no-repeat 97% center;
+				padding: 15px 25px 15px 0;
+    		font-size: 18px;
+    		line-height: 28px;
+				@media (min-width: 768px) {
+					padding: 25px 40px 25px 0;
+    			font-size: 20px;
+    			line-height: 28px;
+				}
 				&.tab-open {
 					background: url(/img/close-btn.png) no-repeat 97% center;
 				}
 			}
 			.tab-content {
-				padding: 20px 30px 0 0;
+				padding-top: 13px;
+				@media (min-width: 768px) {
+					padding: 20px 30px 0 0;
+				}
 				p {
-					font-size: 18px;
-    			line-height: 28px;
     			letter-spacing: 0.5px;
-					margin-bottom: 15px;
+					font-size: 16px;
+    			line-height: 25px;
+    			margin-bottom: 10px;
+					@media (min-width: 768px) {
+						font-size: 18px;
+    				line-height: 28px;
+						margin-bottom: 15px;
+					}
 				}
 			}
 			&.tab-open > .tab-content {

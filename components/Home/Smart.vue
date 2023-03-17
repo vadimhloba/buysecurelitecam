@@ -2,9 +2,14 @@
   <div class="home-smart" id="smart">
 		<div class="container">
 			<img src="/img/arw-down.png" class="arw-down">
+			<div class="title">
+				<h1 class="title-up">Smart Security Solution</h1>
+				<h1 class="title-down">For Your Home and Work</h1>
+			</div>
 			<div class="wrapper">
 				<div class="col-one">
-					<img src="/img/steps-img.jpg">
+					<img src="/img/steps-img-mob.jpg" class="steps-img-mob">
+					<img src="/img/steps-img.jpg" class="steps-img">
 				</div>
 				<div class="col-two">
 					<h1 class="title-up">Smart Security Solution</h1>
@@ -52,40 +57,140 @@ export default {
 
 <style lang="scss" scoped>
 .home-smart {
-	padding: 40px 0 60px;
+	padding: 25px 0 35px;
 	background: var(--bluelight);
+	@media (min-width: 768px) {
+		padding: 40px 0 60px;
+	}
+	.title {
+		text-align: center;
+		.title-up {
+			display: block;
+			@media (min-width: 992px) {
+				display: none;
+			}
+		}
+		.title-down {
+			display: block;
+			@media (min-width: 992px) {
+				display: none;
+			}
+		}
+	}
 	.wrapper {
-		display: flex;
+		display: block;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
+		@media (min-width: 992px) {
+			display: flex;
+			margin-top: 35px;
+		}
 	}
 	.col-one {
-		width: 570px;
-		max-width: 100%;
+		width: 100%;
+		@media (min-width: 992px) {
+			width: 47%;
+		}
+		.steps-img-mob {
+			display: none;
+			width: 550px;
+			margin: 30px auto 0;
+			@media (min-width: 768px) {
+				display: block;
+				padding: 0;
+			}
+			@media (min-width: 992px) {
+				display: none;
+			}
+		}
+		.steps-img {
+			display: block;
+			margin: 20px auto 40px;
+			max-width: 330px;
+			@media (min-width: 768px) {
+				display: none;
+				margin: 0;
+				max-width: 100%;
+			}
+			@media (min-width: 992px) {
+				display: block;
+				margin-top: 8px;
+			}
+		}
 	}
 	.col-two {
-		width: 49%;
+		width: 100%;
+		margin-top: 0;
+		padding: 0;
+		@media (min-width: 768px) {
+			margin-top: 15px;
+    	padding: 0 50px;
+		}
+		@media (min-width: 992px) {
+			width: 50%;
+			margin-top: 0;
+			padding: 0;
+		}
+		.title-up {
+			display: none;
+			@media (min-width: 992px) {
+				display: block;
+			}
+		}
 		.title-down {
-			background: url(/img/pre-line-left.png) no-repeat center bottom;
+			background: url(/img/pre-line-left.png) no-repeat left bottom;
+			display: none;
+			@media (min-width: 992px) {
+				display: block;
+			}
 		}
 		ul {
 			list-style: none;
 			li {
 				position: relative;
-				padding: 0 0 0 45px;
-    		margin: 30px 0 0 0;
+				padding: 0 0 0 40px;
+    		margin-top: 20px;
+				@media (min-width: 768px) {
+					margin-top: 25px;
+					padding: 0 0 0 45px;
+				}
+    		@media (min-width: 992px) {
+					margin-top: 15px;
+				}
+				@media (min-width: 1200px) {
+					margin-top: 30px;
+				}
 				h1 {
-					font-size: 22px;
-    			line-height: 29px;
+					font-size: 19px;
+    			line-height: 30px;
     			color: var(--darkblue);
     			font-weight: 700;
+					@media (min-width: 992px) {
+						font-size: 21px;
+    				line-height: 26px;
+					}
+					@media (min-width: 1200px) {
+						font-size: 22px;
+    				line-height: 29px;
+					}
 				}
 				p {
-					font-size: 19px;
-    			line-height: 28px;
+					font-size: 17px;
+    			line-height: 25px;
     			letter-spacing: 0.5px;
-					margin-top: 6px;
+					margin-top: 0;
 					font-weight: 400;
+					@media (min-width: 768px) {
+						margin-top: 5px;
+					}
+					@media (min-width: 992px) {
+						font-size: 18px;
+    				line-height: 28px;
+						margin-top: 6px;
+					}
+					@media (min-width: 1200px) {
+						font-size: 19px;
+					}
 				}
 				span {
 					position: absolute;

@@ -4,7 +4,7 @@
 			<img src="/img/arw-down.png" class="arw-down">
 			<h1 class="title-up">See What our customers think about</h1>
 			<h1 class="title-down">Secure Lite Cam</h1>
-			<p class="title-desc">The <strong>Secure Lite Cam</strong> has started to develop a cult following, and with over 5,000 5-star reviews, <br> it makes sense. Here's what customers are saying about it:</p>
+			<p class="title-desc">The <strong>Secure Lite Cam</strong> has started to develop a cult following, and with over 5,000 5-star reviews, <br class="hide-mob"> it makes sense. Here's what customers are saying about it:</p>
 			<div class="features">
 				<div class="block">
 					<img src="/img/block-img1.jpg">
@@ -176,41 +176,97 @@ export default {
 <style lang="scss" scoped>
 .home-what {
 	position: relative;
-	padding: 20px 0 60px;
+	padding: 25px 0 30px;
 	text-align: center;
+	@media (min-width: 768px) {
+		padding: 20px 0 60px;
+	}
 	.features {
-		margin: 40px auto 0;
-		display: flex;
+		margin: 30px auto 0;
+		display: block;
 		justify-content: space-between;
+		@media (min-width: 768px) {
+			margin-top: 40px;
+			display: flex;
+		}
 		.block {
-			width: 31%;
+			width: 100%;
+			padding: 0 20px;
+    	text-align: left;
+			margin-bottom: 30px;
+			@media (min-width: 768px) {
+				margin-bottom: 0;
+				padding: 0;
+				width: 32%;
+				text-align: center;
+			}
+			@media (min-width: 992px) {
+				width: 31%;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
 			img {
 				display: block;
 				margin: 0 auto;
 			}
 			h1 {
-				font-size: 20px;
-    		line-height: 28px;
+				font-size: 18px;
+    		line-height: 26px;
+    		margin: 15px 0 10px;
     		font-weight: 600;
-				margin: 20px 0 15px;
+				@media (min-width: 768px) {
+					font-size: 20px;
+    			line-height: 26px;
+					margin: 20px 0 15px;
+				}
+				@media (min-width: 992px) {
+					font-size: 20px;
+    			line-height: 28px;
+				}
 			}
 			.stars {
-				margin-bottom: 20px;
+				margin: 0;
+				@media (min-width: 768px) {
+					margin: 20px auto 0;
+				}
 			}
 			.desc {
-				font-size: 18px;
-    		line-height: 28px;
+				font-size: 16px;
+    		line-height: 25px;
+    		letter-spacing: 0.5px;
+				margin-top: 15px;
+				@media (min-width: 768px) {
+					font-size: 17px;
+    			line-height: 26px;
+					letter-spacing: 0;
+					margin-top: 10px;
+				}
+				@media (min-width: 1200px) {
+					font-size: 18px;
+    			line-height: 28px;
+				}
 			}
 			.customer {
 				display: flex;
 				align-items: center;
-				justify-content: center;
+				justify-content: flex-start;
 				font-size: 14px;
     		line-height: 20px;
-				margin-top: 25px;
+				margin-top: 16px;
+				@media (min-width: 768px) {
+					margin-top: 25px;
+					justify-content: center;
+				}
 				span {
-					font-size: 18px;
-    			font-weight: 500;
+    			font-size: 17px;
+					font-weight: 500;
+					@media (min-width: 768px) {
+						font-size: 15px;
+					}
+					@media (min-width: 992px) {
+						font-size: 18px;
+					}
 				}
 				img {
 					margin: -2px 5px 0;
@@ -219,72 +275,117 @@ export default {
 		}
 	}
 	.testers {
-		margin-top: 80px;
+		margin-top: 20px;
 		text-align: left;
+		@media (min-width: 768px) {
+			margin-top: 80px;
+		}
 		.tester {
-			display: flex;
+			display: block;
 			border-bottom: 1px solid var(--lightgray);
-			padding: 0 0 35px;
-    	margin: 20px 0;
+    	margin-top: 33px;
+			padding-bottom: 30px;
+			@media (min-width: 768px) {
+				margin: 20px 0;
+				padding-bottom: 35px;
+				display: flex;
+			}
 			&:last-child {
 				border-bottom: 0;
 			}
 			.row-one {
-				display: block;
-				width: 260px;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
 				padding-right: 15px;
+				@media (min-width: 768px) {
+					width: 260px;
+					display: block;
+				}
 				.customer {
 					position: relative;
-					padding: 10px 0 10px 90px;
+					padding-left: 60px;
+					@media (min-width: 768px) {
+						padding: 10px 0 10px 90px;
+					}
 					.letter {
 						position: absolute;
 						display: block;
 						left: 0;
-						top: 2px;
-						width: 70px;
-						height: 70px;
 						background: var(--darkblue-v2);
 						border-radius: 50%;
 						color: var(--white);
 						font-size: 22px;
-    				line-height: 70px;
     				text-align: center;
+						width: 50px;
+    				height: 50px;
+    				line-height: 50px;
+    				top: 0;
+						@media (min-width: 768px) {
+							width: 70px;
+							height: 70px;
+							line-height: 70px;
+							top: 2px;
+						}
 					}
 					h1 {
-						font-size: 18px;
-    				line-height: 24px;
+						font-size: 16px;
+    				line-height: 22px;
     				font-weight: 600;
+						@media (min-width: 768px) {
+							font-size: 18px;
+    					line-height: 24px;
+						}
 					}
 					p {
 						display: flex;
 						align-items: center;
-						font-size: 17px;
+						font-size: 13px;
     				color: #83cc1c;
-    				margin-top: 7px;
+    				margin-top: 3.5px;
+						@media (min-width: 768px) {
+							font-size: 17px;
+							margin-top: 7px;
+						}
 						img {
 							display: block;
-							margin: -5px 6px 0 0;
+							margin: -2px 6px 0 0;
 						}
 					}
 				}
 				.product {
 					position: relative;
-					padding: 16px 0 10px 90px;
-					border-top: 1px solid var(--lightgray);
+					padding-left: 55px;
 					display: flex;
-					margin-top: 16px;
+					@media (min-width: 768px) {
+						width: 100%;
+						border-top: 1px solid var(--lightgray);
+						margin-top: 16px;
+						padding: 16px 0 10px 90px;
+					}
 					img {
 						position: absolute;
 						left: 0;
-						top: 16px;
-						border-radius: 5px;
-						width: 73px;
-						height: 73px;
+						border-radius: 10px;
+						width: 50px;
+    				height: 50px;
+    				padding: 5px;
+    				top: 0;
+						@media (min-width: 768px) {
+							border-radius: 5px;
+							width: 73px;
+							height: 73px;
+							padding: 0;
+							top: 16px;
+						}
 					}
 					p {
-						font-size: 15px;
+						font-size: 14px;
     				line-height: 22px;
-						margin-top: 14px;
+						@media (min-width: 768px) {
+							font-size: 15px;
+							margin-top: 14px;
+						}
 						span {
 							font-weight: 600;
 						}
@@ -293,25 +394,38 @@ export default {
 			}
 			.row-two {
 				display: block;
-				width: calc(100% - 270px);
-				padding: 8px 0 8px 30px;
-				border-left: 1px solid var(--lightgray);
+				width: 100%;
+				@media (min-width: 768px) {
+					padding: 8px 0 8px 30px;
+					width: calc(100% - 270px);
+					border-left: 1px solid var(--lightgray);
+				}
 				img {
 					margin-top: 15px;
 				}
 				p {
-					font-size: 18px;
-    			line-height: 27px;
+					font-size: 16px;
+					line-height: 25px;
     			letter-spacing: 0.5px;
 					margin-top: 15px;
+					@media (min-width: 768px) {
+						font-size: 17px;
+					}
+					@media (min-width: 992px) {
+						font-size: 18px;
+    				line-height: 27px;
+					}
 				}
 			}
 		}
 	}
 	.btn-box {
-		display: block;
+		display: none;
 		width: 470px;
 		margin: 70px auto 0;
+		@media (min-width: 768px) {
+			display: block;
+		}
 	}
 }
 </style>

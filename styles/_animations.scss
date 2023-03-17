@@ -12,10 +12,10 @@
 }
 @keyframes marque {
 	0% {
-		transform: translateX(0%);
+		left: 0%;
 	}
 	100% {
-		transform: translateX(-100%);
+		left: -100%;
 	}
 }
 
@@ -25,12 +25,8 @@
 	-webkit-animation: pulse 1.5s infinite;
 }
 .marque {
-	animation: marque 6s linear infinite;
-	-webkit-animation: marque 6s linear infinite;
-	@media (min-width: 576px) {
-		animation: marque 14s linear infinite;
-		-webkit-animation: marque 14s linear infinite;
-	}
+	animation: marque 14s linear infinite;
+	-webkit-animation: marque 14s linear infinite;
 	@media (min-width: 992px) {
 		animation: marque 20s linear infinite;
 		-webkit-animation: marque 20s linear infinite;

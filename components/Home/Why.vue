@@ -90,9 +90,12 @@ export default {
 <style lang="scss" scoped>
 .home-why {
 	position: relative;
-	padding: 40px 0 60px;
+	padding: 25px 0 35px;
 	width: 100%;
 	text-align: center;
+	@media (min-width: 768px) {
+		padding: 40px 0 60px;
+	}
 	.pr-features {
 		position: relative;
 		width: 100%;
@@ -282,10 +285,11 @@ export default {
 		display: block;
 		list-style: none;
 		align-items: center;
-		margin-top: 50px;
+		margin-top: 0;
 		width: 100%;
 		@media (min-width: 768px) {
 			display: flex;
+			margin-top: 50px;
 		}
 		li {
 			display: inline-block;

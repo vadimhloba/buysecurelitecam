@@ -6,7 +6,7 @@
 				<p>Your 50% Discount Code Has Been Applied<span>VIP50</span></p>
 			</div>
 		</div>
-		<div class="header__top-fix-bar" :class="{'bar-fixed': isFixed}">
+		<div class="header__top-fix-bar" :class="{ 'bar-fixed': isFixed }">
 			<div class="wrapper">
 				<div class="container">
 					<div class="logo">
@@ -32,15 +32,15 @@
 <script>
 export default {
   name: 'HomeHeader',
-	data:()=>({ isFixed:false }),
-  mounted(){
+	data:() => ({ isFixed: false }),
+  mounted() {
 		window.addEventListener('scroll', this.handleScroll);
 	},
-  beforeDestroy(){
+  beforeDestroy() {
 		window.removeEventListener('scroll', this.handleScroll);
 	},
-  methods:{
-	  handleScroll(){
+  methods: {
+	  handleScroll() {
 	    this.isFixed = window.pageYOffset > 0
 	  }
 	}
