@@ -1,11 +1,11 @@
 <template>
-	<div class="footer">
-		<h1>Footer</h1>
+	<div class="page page__faq">
+		<h1>Faq page</h1>
 	</div>
 </template>
 
 <script scoped>
 export default {
-	name: 'Footer',
+	
 }
 </script>

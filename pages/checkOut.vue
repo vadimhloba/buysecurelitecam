@@ -1,13 +1,13 @@
 <template>
 	<div class="page page__checkout">
-		<h1>Checkout page</h1>
+		<OfferHeader/>
+		<OfferForm/>
+		<OfferFaq/>
 	</div>
 </template>
 
-<script>
+<script scoped>
 export default {
-	mounted(){
-		console.log('checkout page');
-	}
+	layout: 'footer',
 }
 </script>

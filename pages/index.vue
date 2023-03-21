@@ -14,10 +14,8 @@
 	</div>
 </template>
 
-<script>
+<script scoped>
 export default {
-  mounted(){
-  	console.log('Home page');
-  }
+	layout: 'empty',
 }
 </script>

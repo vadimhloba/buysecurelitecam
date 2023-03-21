@@ -6,23 +6,23 @@
 		<div class="container">
 			<img src="/img/logo.png">
 			<ul>
-				<li>Reference</li>
+				<li><nuxt-link to="reference" target="_blank">Reference</nuxt-link></li>
 				<li>|</li>
-				<li>Owner's Manual</li>
+				<li><nuxt-link to="manual" target="_blank">Owner's Manual</nuxt-link></li>
 				<li>|</li>
-				<li>FAQs</li>
+				<li><nuxt-link to="faq" target="_blank">FAQs</nuxt-link></li>
 				<li>|</li>
-				<li>Contact Us</li>
+				<li><nuxt-link to="contact" target="_blank">Contact Us</nuxt-link></li>
 				<li>|</li>
-				<li>Terms & Conditions</li>
+				<li><nuxt-link to="tam" target="_blank">Terms & Conditions</nuxt-link></li>
 				<li>|</li>
-				<li>Privacy Policy</li>
+				<li><nuxt-link to="privacy" target="_blank">Privacy Policy</nuxt-link></li>
 				<li>|</li>
-				<li>Returns</li>
+				<li><nuxt-link to="returns" target="_blank">Returns</nuxt-link></li>
 				<li>|</li>
-				<li>Shipping</li>
+				<li><nuxt-link to="shipping" target="_blank">Shipping</nuxt-link></li>
 				<li>|</li>
-				<li>Waranty</li>
+				<li><nuxt-link to="waranty" target="_blank">Waranty</nuxt-link></li>
 			</ul>
 			<p>© 2023 Secure Lite Cam, All rights reserved.</p>
 		</div>
@@ -68,6 +68,9 @@ export default {
 		width: 100%;
 		li {
 			display: inline-block;
+			a {
+				color: #333333;
+			}
 		}
 	}
 	p {
@@ -86,6 +89,9 @@ export default {
 			z-index: 99;
 			bottom: 0%;
     	left: auto;
+			@media (min-width: 768px) {
+				display: none;
+			}
 		}
 	}
 }
