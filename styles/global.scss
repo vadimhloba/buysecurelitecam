@@ -48,10 +48,14 @@ a {
 	text-decoration: none;
 }
 
-img, svg{
+img, svg {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+b, strong {
+	font-weight: bolder;
 }
 
 
@@ -75,6 +79,7 @@ img, svg{
     width: 1190px;
   }
 }
+
 
 /* styling br */
 .for-mob {
