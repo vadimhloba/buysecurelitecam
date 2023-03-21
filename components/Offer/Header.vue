@@ -18,7 +18,8 @@
 				<div class="col-two">
 					<div class="call">
 						<img src="/img/white-phone.png">
-						<span>Questions? Call:</span>
+						<span>Questions?</span>
+						<span>Call:</span>
 						<a href="tel:+380 000 000 000">+1 (833) 228 5045</a>
 					</div>
 					<div class="bottom-inf">
@@ -88,38 +89,76 @@ export default {
 			display: flex;
 			.logo {
 				display: block;
-				padding-right: 0.5rem
+				max-width: 150px;
+    		padding-left: 16px;
+    		max-height: 50px;
+				@media (min-width: 768px) {
+					padding-right: 0.7rem;
+					padding-left: 0;
+					max-height: 100%;
+					max-width: 100%;
+				}
 			}
 			.desc {
+				display: none;
 				border-left: 1px solid #fff;
 				align-self: center;
 				color: #fff;
-				padding-left: 0.5rem
+				padding-left: 0.5rem;
+				@media (min-width: 768px) {
+					display: block;
+				}
 			}
 		}
 		.col-two {
 			.call {
 				position: relative;
 				display: flex;
+				justify-content: flex-end;
+				font-size: 12px;
 				img {
 					transform: rotate(240deg);
-					width: 12px;
+					width: 10px;
+    			height: 13px;
 					max-width: 100%;
 					margin-right: 5px;
+					margin-top: 1px;
 				}
 				span {
-
+					color: #fff;
+					&:nth-child(2) {
+						display: none;
+						@media (min-width: 768px) {
+							margin-right: 5px;
+							display: block;
+						}
+					}
 				}
 				a {
-
+					color: #15c309;
+					margin-left: 5px;
 				}
 			}
 			.bottom-inf {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
 				img {
-
+					width: 30px;
+					margin-left: 30px;
+					margin-right: 8px;
+					@media (min-width: 768px) {
+						width: 50px;
+					}
 				}
 				span {
-
+					font-size: 10px;
+    			color: #fff;
+					width: 101px;
+					@media (min-width: 768px) {
+						font-size: 12px;
+						width: 121px;
+					}
 				}
 			}
 		}
