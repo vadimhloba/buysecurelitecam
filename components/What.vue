@@ -1,7 +1,7 @@
 <template>
   <div class="home-what" id="what">
 		<div class="container">
-			<img src="/img/arw-down.png" class="arw-down">
+			<img v-if="showImage" :src="imageUrl" class="arw-down">
 			<h1 class="title-up">See What our customers think about</h1>
 			<h1 class="title-down">Secure Lite Cam</h1>
 			<p class="title-desc">The <strong>Secure Lite Cam</strong> has started to develop a cult following, and with over 5,000 5-star reviews, <br class="hide-mob"> it makes sense. Here's what customers are saying about it:</p>
@@ -169,7 +169,14 @@
 
 <script>
 export default {
-  name: 'HomeWhat'
+  name: 'What',
+	props: {
+		imageUrl: String,
+		showImage: {
+			type: Boolean,
+			default: true
+		}
+	}
 }
 </script>
 

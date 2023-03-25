@@ -8,7 +8,7 @@
 		<HomeWhy/>
 		<HomeSmart/>
 		<HomeSecure/>
-		<HomeWhat/>
+		<What image-url="/img/arw-down.png" :show-image="true"/>
 		<HomeFaq/>
 		<HomeFooter/>
 	</div>
