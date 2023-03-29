@@ -28,7 +28,7 @@
 					<p class="customer"><span>Maria Vargas</span><img src="/img/marker.png"> Verified Customer</p>
 				</div>
 			</div>
-			<div class="testers">
+			<div v-if="showDiv" class="testers">
 				<div class="tester">
 					<div class="row-one">
 						<div class="customer">
@@ -156,7 +156,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="btn-box">
+			<div v-if="showBtn" class="btn-box">
 				<BtnOffer buttonText="Unlock Offer & Save 50%"/>
 				<div class="btn-text">
 					<span>Hurry!</span> Only <span>172 Left</span> At This Price!
@@ -173,6 +173,14 @@ export default {
 	props: {
 		imageUrl: String,
 		showImage: {
+			type: Boolean,
+			default: true
+		},
+		showDiv: {
+			type: Boolean,
+			default: true
+		},
+		showBtn: {
 			type: Boolean,
 			default: true
 		}
