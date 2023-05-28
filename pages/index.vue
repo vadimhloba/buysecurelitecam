@@ -9,7 +9,7 @@
 		<HomeSmart/>
 		<HomeSecure/>
 		<What image-url="/img/arw-down.png" :show-image="true"/>
-		<HomeFaq/>
+		<Faq/>
 		<HomeFooter/>
 	</div>
 </template>

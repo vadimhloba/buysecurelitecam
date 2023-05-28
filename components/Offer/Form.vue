@@ -177,6 +177,148 @@
 			</div>
 			<div class="row-two">
 				<What :show-image="false" :show-div="false" :show-btn="false"/>
+				<div class="testers">
+					<div class="tester">
+						<div class="col-one">
+							<img src="/img/user.jpg">
+						</div>
+						<div class="col-two">
+							<div class="wrapper">
+								<div>
+									<span>Justin C. Bond - Powhatan Point, OH</span>
+									<a href="#">
+										<img src="/img/check-mark.svg">
+										<div>Verified Review</div>
+									</a>
+								</div>
+								<img src="/img/stars.png">
+							</div>
+							<div class="desc">
+								I bought the first one to try it out. It is better than a ring device to me based on the fact that you can move the camera in a 360 degree rotation. The night vision/infrared is excellent as well.
+							</div>
+						</div>
+					</div>
+					<div class="tester">
+						<div class="col-one">
+							<img src="/img/user.jpg">
+						</div>
+						<div class="col-two">
+							<div class="wrapper">
+								<div>
+									<span>Julia R. Anderson - Hickory Hills, IL</span>
+									<a href="#">
+										<img src="/img/check-mark.svg">
+										<div>Verified Review</div>
+									</a>
+								</div>
+								<img src="/img/stars.png">
+							</div>
+							<div class="desc">
+								I bought one of these in May and liked it so much I bought a second one in June. The cameras work great for what we need. We have just over an acre of land and these cameras cover the entire area. The video and audio quality are very good even at night.
+							</div>
+						</div>
+					</div>
+					<div class="tester">
+						<div class="col-one">
+							<img src="/img/user.jpg">
+						</div>
+						<div class="col-two">
+							<div class="wrapper">
+								<div>
+									<span>David R. Sanderson - Manchester, NH</span>
+									<a href="#">
+										<img src="/img/check-mark.svg">
+										<div>Verified Review</div>
+									</a>
+								</div>
+								<img src="/img/stars.png">
+							</div>
+							<div class="desc">
+								This is ideal for individuals who have a porch light but no electrical source for mounting security cameras. I switched out the porch light for this security bulb. I'm never in the dark when I get home at night because the motion-activated switch turns on the light when I arrive. If someone comes within range of my property, it notifies me. I was able to review any activity after connecting the SD card. I can move the screen in a radius too. Perfect answer for security surveillance outside! The cost is also quite reasonable. Definitely recommend!
+							</div>
+						</div>
+					</div>
+					<div class="tester">
+						<div class="col-one">
+							<img src="/img/user.jpg">
+						</div>
+						<div class="col-two">
+							<div class="wrapper">
+								<div>
+									<span>Tabatha A. Pires - New Berlin, WI</span>
+									<a href="#">
+										<img src="/img/check-mark.svg">
+										<div>Verified Review</div>
+									</a>
+								</div>
+								<img src="/img/stars.png">
+							</div>
+							<div class="desc">
+								The night vision is astounding, attached to a flood light 2 stories up... we sit on a hill so it's a total equivalent of 3 stories and it is amazing video quality down to the street on the side of my house.
+							</div>
+						</div>
+					</div>
+					<div class="tester">
+						<div class="col-one">
+							<img src="/img/user.jpg">
+						</div>
+						<div class="col-two">
+							<div class="wrapper">
+								<div>
+									<span> Alex H. Cottingham - Plymouth, MI</span>
+									<a href="#">
+										<img src="/img/check-mark.svg">
+										<div>Verified Review</div>
+									</a>
+								</div>
+								<img src="/img/stars.png">
+							</div>
+							<div class="desc">
+								I had my doubts but this little camera is amazing!
+							</div>
+						</div>
+					</div>
+					<div class="tester">
+						<div class="col-one">
+							<img src="/img/user.jpg">
+						</div>
+						<div class="col-two">
+							<div class="wrapper">
+								<div>
+									<span>Reina J. Underwood - North Olmsted, OH</span>
+									<a href="#">
+										<img src="/img/check-mark.svg">
+										<div>Verified Review</div>
+									</a>
+								</div>
+								<img src="/img/stars.png">
+							</div>
+							<div class="desc">
+								It pans to the left and right, up and down, has motion tracking that works flawlessly and has many features that the big name cameras have... it also has a slot for a 64GB SD Card.  This purchase has a lot of value to it. 
+							</div>
+						</div>
+					</div>
+					<div class="tester">
+						<div class="col-one">
+							<img src="/img/user.jpg">
+						</div>
+						<div class="col-two">
+							<div class="wrapper">
+								<div>
+									<span>Cassie G. Oleary - Front Royal, VA</span>
+									<a href="#">
+										<img src="/img/check-mark.svg">
+										<div>Verified Review</div>
+									</a>
+								</div>
+								<img src="/img/stars.png">
+							</div>
+							<div class="desc">
+								I'm a researcher at heart and I finally purchased this camera for a multitude of reasons. There is no monthly fee, the set up is so simple, it has good app reviews, and the customer service is awesome. Other companies have high monthly fees for storage and ongoing security and mounts that have to be drilled in. These I just have to pop in an sd card, and screw in a bulb. A project I can do myself without having to nag my husband for weeks to help!
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -258,7 +400,7 @@ export default {
     				margin-top: 15px;
     				line-height: 22px;
     				text-align: center;
-    				padding: 15px;
+    				padding: 5px 15px;
     				width: 100%;
     				position: relative;
     				outline: none !important;
@@ -363,6 +505,71 @@ export default {
 						font-weight: 400;
 						line-height: 1.5;
 						text-align: center;
+					}
+				}
+			}
+		}
+		.row-two {
+			.testers {
+				margin-top: 16px !important;
+				.tester {
+					padding: 10px 0;
+    			background: #f7f7f7 !important;
+    			border: 1px solid #e1e1e1;
+					display: flex;
+					margin: 8px 0;
+					.col-one {
+						padding: 0 8px;
+						flex: 0 0 8.333333%;
+						max-width: 8.333333%;
+						img {
+							border-radius: 50%;
+						}
+					}
+					.col-two {
+						padding-left: 4px;
+						padding-right: 15px;
+						flex: 0 0 91.666667%;
+						max-width: 91.666667%;
+						.wrapper {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							div {
+								display: flex;
+								align-items: center;
+							}
+							span {
+    						margin-left: 0;
+    						padding: 1px 0;
+    						font-weight: 700;
+    						font-size: 14px;
+    						color: #1fba34;
+								margin-right: 5px;
+							}
+							a {
+								color: blue;
+								border-left: 1px solid #666;
+    						padding-left: 5px;
+    						margin-left: 0;
+    						color: #666;
+    						font-size: 12px;
+    						pointer-events: none;
+    						font-weight: 600;
+								display: flex;
+								img {
+									margin-right: 3px;
+								}
+								div {
+									color: blue;
+								}
+							}
+						}
+						.desc {
+							border-top: 1px dashed #a0a0a0;
+    					margin-top: 9px;
+    					padding-top: 5px;
+						}
 					}
 				}
 			}

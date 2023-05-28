@@ -1,6 +1,6 @@
 <template>
 	<div class="offer-faq">
-		<h1>OfferFaq</h1>
+		<Faq/>
 	</div>
 </template>
 
